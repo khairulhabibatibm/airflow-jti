@@ -8,7 +8,7 @@ airflow:
     # repository: apache/airflow
     repository: khairulhabib/airflow-3.8
     # tag: latest
-    tag: 1.0.1
+    tag: 1.1.8
     ## values: Always or IfNotPresent
     pullPolicy: IfNotPresent
     pullSecret: ""
@@ -144,7 +144,7 @@ airflow:
     - "lithops"
     - "ffmpeg-python"
     - "pyodbc"
-    - "psycopg2"
+    - "psycopg2-binary"
 
   ## extra volumeMounts for the web/scheduler/worker Pods
   ##
@@ -906,7 +906,7 @@ dags:
     ## EXAMPLE: (SSH)
     ##   url: "ssh://git@github.com:torvalds/linux.git"
     ##
-    url: "https://github.com/khairulhabibatibm/demo_airflow_dags.git"
+    url: "https://github.com/gnugroho/demo_airflow_dags.git"
 
     ## the branch/tag/sha1 which we clone
     ##
