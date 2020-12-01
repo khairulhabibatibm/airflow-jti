@@ -143,6 +143,8 @@ airflow:
     - "apache-airflow[devel]"
     - "lithops"
     - "ffmpeg-python"
+    - "pyodbc"
+    - "psycopg2"
 
   ## extra volumeMounts for the web/scheduler/worker Pods
   ##
